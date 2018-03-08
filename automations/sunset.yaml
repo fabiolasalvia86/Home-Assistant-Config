@@ -1,0 +1,10 @@
+- alias: Sunset - Unoccupied
+  hide_entity: True
+  trigger:
+    platform: numeric_state
+    entity_id: sun.sun
+    value_template: '{{ state.attributes.elevation }}'
+    below: 8
+  action:
+    - service: script.livingroom_lights_on
+    - service: script.exterior_lights_on
