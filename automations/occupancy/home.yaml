@@ -12,6 +12,7 @@
   action:
     - service: script.welcome_home
     - service: script.livingroom_lights_on
+    - service: script.cabinet_lights_on
     - service: script.bedroom_lights_on
     - service: script.pantry_light_on
     - service: script.recessed_lights_on
