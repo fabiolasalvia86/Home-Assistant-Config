@@ -1,0 +1,9 @@
+- alias: Sunrise
+  hide_entity: True
+  trigger:
+    platform: numeric_state
+    entity_id: sun.sun
+    value_template: '{{ state.attributes.elevation }}'
+    above: 8
+  action:
+    - service: script.exterior_lights_off
