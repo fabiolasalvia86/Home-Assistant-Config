@@ -17,5 +17,5 @@
     - service: script.recessed_lights_on
     - service: script.fan_on
     - service: script.dog_music_off
-    - service: script.backdoor_lock
+    - service: script.back_door_lock
     - service: script.nest_home
