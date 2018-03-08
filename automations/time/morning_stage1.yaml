@@ -1,4 +1,4 @@
-- alias: morning - stage 2
+- alias: morning - stage 1
   hide_entity: True
   trigger:
     - platform: time
