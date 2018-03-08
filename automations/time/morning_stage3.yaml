@@ -1,0 +1,9 @@
+- alias: Morning - Weekend - Stage 3
+  hide_entity: True
+  trigger:
+    - platform: time
+      at: '11:00:00'
+    - platform: time
+      at: '12:00:00'
+  action:
+    service: script.morning_stage3
