@@ -1,4 +1,4 @@
-- alias: Sunset - Unoccupied
+- alias: Sunset
   hide_entity: True
   trigger:
     platform: numeric_state
