@@ -1,0 +1,9 @@
+- alias: evening
+  hide_entity: True
+  trigger:
+    platform: time
+    at: '18:00:00'
+  action:
+    - service: script.bedroom_lights_fade
+    - service: script.livingroom_lights_fade
+    - service: script.cabinet_lights_fade
