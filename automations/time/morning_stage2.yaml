@@ -5,37 +5,5 @@
       at: '06:30:00'
     - platform: time
       at: '07:30:00'
-  condition:
-    - condition: and
-      conditions:
-      - condition: time
-        after: '06:30:00"
-      - condition: time
-        weekday:
-          - sat
-          - sun
-      - condition: state
-        entity_id: group.tristal
-        state: 'home'
-      - condition: state
-        entity_id: light.master_bedroom
-        state: 'off'
-    - condition: and
-      conditions:
-      - condition: time
-        after: '07:30:00"
-      - condition: time
-        weekday:
-          - mon
-          - tue
-          - wed
-          - thu
-          - fri
-      - condition: state
-        entity_id: group.tristal
-        state: 'home'
-      - condition: state
-        entity_id: light.master_bedroom
-        state: 'off'
   action:
     - service: script.morning_stage_2
