@@ -1,0 +1,18 @@
+- alias: Away Mode
+  hide_entity: True
+  trigger:
+    - platform: state
+      entity_id: group.family
+      from: 'home'
+      to: 'not_home'
+    - platform: state
+      entity_id: group.tristal
+      from: 'home'
+      to: 'not_home'
+  action:
+    - service: script.lights_off
+    - service: script.media_players_off
+    - service: script.fan_off
+    - service: script.dog_music_on
+    - service: script.back_door_lock
+    - service: script.nest_home
