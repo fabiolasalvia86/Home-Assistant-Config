@@ -2,14 +2,14 @@
   hide_entity: True
   trigger:
     - platform: time
-      at: '06:00:00'
+      at: '06:30:00'
     - platform: time
-      at: '07:00:00'
+      at: '07:30:00'
   condition:
     - condition: and
       conditions:
       - condition: time
-        after: '07:00:00"
+        after: '06:30:00"
       - condition: time
         weekday:
           - sat
@@ -23,7 +23,7 @@
     - condition: and
       conditions:
       - condition: time
-        after: '06:00:00"
+        after: '07:30:00"
       - condition: time
         weekday:
           - mon
@@ -38,4 +38,4 @@
         entity_id: light.master_bedroom
         state: 'off'
   action:
-    - service: script.morning_stage_1
+    - service: script.morning_stage_2
