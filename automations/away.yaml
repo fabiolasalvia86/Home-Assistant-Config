@@ -14,5 +14,5 @@
     - service: script.media_players_off
     - service: script.fan_off
     - service: script.dog_music_on
-    - service: script.back_door_lock
-    - service: script.nest_home
+    - service: script.back_door_unlock
+    - service: script.nest_away
